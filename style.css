@@ -1,0 +1,70 @@
+body{
+    text-align: center;
+    background-image: url("./todo.webp");
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    color: skyblue;
+}
+h1 {
+    font-weight: bolder;
+    text-align: center;
+}
+ul {
+    list-style: none;
+    font-weight: 800;
+}
+
+ button {
+    background: transparent;
+    border: 2px solid skyblue;
+    border-radius: 100%;
+    width: 40px; 
+    height: 40px; 
+    color: skyblue;
+    cursor: pointer;
+}
+ button:hover {
+    transform: scale(1.1);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+ul li{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    margin: 10px auto;
+    font-weight: bold;
+}
+
+ul li span{
+    display: inline-block;
+    margin: auto 0; 
+}
+
+ul li span:first-child {
+    width: 70%; 
+    text-align: left;
+}
+
+form input[type="text"] {
+    background: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 25%;
+    padding: 15px 15px 5px;
+    border-bottom: 2px solid skyblue;
+    color: skyblue;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+form input::placeholder{
+    color: skyblue;
+}
+
+form input[type="text"]:hover {
+    width: 27%;
+}
